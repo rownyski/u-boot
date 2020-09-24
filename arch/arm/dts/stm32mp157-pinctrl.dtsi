@@ -2,6 +2,8 @@
 /*
  * Copyright (C) STMicroelectronics 2017 - All Rights Reserved
  * Author: Ludovic Barre <ludovic.barre@st.com> for STMicroelectronics.
+ *
+ *PTU@thu2235
  */
 #include <dt-bindings/pinctrl/stm32-pinfunc.h>
 
