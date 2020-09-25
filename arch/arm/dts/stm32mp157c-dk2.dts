@@ -10,7 +10,7 @@
 #include <dt-bindings/rtc/rtc-stm32.h>
 
 / {
-	model = "STMicroelectronics STM32MP157C-DK2 Discovery Board";
+	model = "STMicroelectronics STM32MP157C-DK2 Discovery Board PTU u-boot";
 	compatible = "st,stm32mp157c-dk2", "st,stm32mp157";
 
 	aliases {

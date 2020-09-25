@@ -4,6 +4,7 @@
  * Author: Ludovic Barre <ludovic.barre@st.com> for STMicroelectronics.
  *
  *PTU@thu2235
+ *PTU@fri0826
  */
 #include <dt-bindings/pinctrl/stm32-pinfunc.h>
 
@@ -1651,8 +1652,8 @@
 
 			i2c4_pins_a: i2c4-0 {
 				pins {
-					pinmux = <STM32_PINMUX('Z', 4, AF6)>, /* I2C4_SCL */
-						 <STM32_PINMUX('Z', 5, AF6)>; /* I2C4_SDA */
+					pinmux = <STM32_PINMUX('D', 12, AF4)>, /* I2C4_SCL */
+						 <STM32_PINMUX('F', 15, AF4)>; /* I2C4_SDA */
 					bias-disable;
 					drive-open-drain;
 					slew-rate = <0>;
@@ -1661,8 +1662,8 @@
 
 			i2c4_pins_sleep_a: i2c4-1 {
 				pins {
-					pinmux = <STM32_PINMUX('Z', 4, ANALOG)>, /* I2C4_SCL */
-						 <STM32_PINMUX('Z', 5, ANALOG)>; /* I2C4_SDA */
+					pinmux = <STM32_PINMUX('D', 12, ANALOG)>, /* I2C4_SCL */
+						 <STM32_PINMUX('F', 15, ANALOG)>; /* I2C4_SDA */
 				};
 			};
 
