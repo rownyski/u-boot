@@ -151,8 +151,8 @@
 				pins {
 					pinmux = <STM32_PINMUX('C', 3, ANALOG)>, /* ADC1 in13 */
 						 <STM32_PINMUX('F', 12, ANALOG)>, /* ADC1 in6 */
-						 <STM32_PINMUX('F', 13, ANALOG)>, /* ADC2 in2 */
-						 <STM32_PINMUX('F', 14, ANALOG)>; /* ADC2 in6 */
+						 <STM32_PINMUX('F', 13, ANALOG)>;//, /* ADC2 in2 */
+						// <STM32_PINMUX('F', 14, ANALOG)>; /* ADC2 in6 */
 				};
 			};
 
@@ -909,21 +909,21 @@
 						 <STM32_PINMUX('D', 15, ANALOG)>; /* TIM4_CH4 */
 				};
 			};
-
-			pwm4_pins_b: pwm4-1 {
-				pins {
-					pinmux = <STM32_PINMUX('D', 13, AF2)>; /* TIM4_CH2 */
-					bias-pull-down;
-					drive-push-pull;
-					slew-rate = <0>;
-				};
-			};
-
-			pwm4_sleep_pins_b: pwm4-sleep-1 {
-				pins {
-					pinmux = <STM32_PINMUX('D', 13, ANALOG)>; /* TIM4_CH2 */
-				};
-			};
+//
+//			pwm4_pins_b: pwm4-1 {
+//				pins {
+//					pinmux = <STM32_PINMUX('D', 13, AF2)>; /* TIM4_CH2 */
+//					bias-pull-down;
+//					drive-push-pull;
+//					slew-rate = <0>;
+//				};
+//			};
+//
+//			pwm4_sleep_pins_b: pwm4-sleep-1 {
+//				pins {
+//					pinmux = <STM32_PINMUX('D', 13, ANALOG)>; /* TIM4_CH2 */
+//				};
+//			};
 
 			pwm5_pins_a: pwm5-0 {
 				pins {

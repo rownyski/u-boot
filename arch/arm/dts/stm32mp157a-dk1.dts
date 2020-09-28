@@ -621,8 +621,8 @@
 	/delete-property/dmas;
 	/delete-property/dma-names;
 	pwm {
-		pinctrl-0 = <&pwm4_pins_a &pwm4_pins_b>;
-		pinctrl-1 = <&pwm4_sleep_pins_a &pwm4_sleep_pins_b>;
+		pinctrl-0 = <&pwm4_pins_a>;// &pwm4_pins_b>;
+		pinctrl-1 = <&pwm4_sleep_pins>;//_a &pwm4_sleep_pins_b>;
 		pinctrl-names = "default", "sleep";
 		status = "okay";
 	};
