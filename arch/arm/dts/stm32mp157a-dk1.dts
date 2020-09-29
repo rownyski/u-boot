@@ -292,11 +292,6 @@
 	typec: stusb1600@28 {
 		compatible = "st,stusb1600";
 		reg = <0x28>;
-		interrupts = <11 IRQ_TYPE_EDGE_FALLING>;
-		interrupt-parent = <&gpioi>;
-		pinctrl-names = "default";
-		pinctrl-0 = <&stusb1600_pins_a>;
-
 		status = "okay";
 
 		typec_con: connector {
@@ -367,8 +362,8 @@
 
 			v1v8_audio: ldo1 {
 				regulator-name = "v1v8_audio";
-				regulator-min-microvolt = <1800000>;
-				regulator-max-microvolt = <1800000>;
+				regulator-min-microvolt = <3300000>;
+				regulator-max-microvolt = <3300000>;
 				regulator-always-on;
 				interrupts = <IT_CURLIM_LDO1 0>;
 
@@ -621,8 +616,8 @@
 	/delete-property/dmas;
 	/delete-property/dma-names;
 	pwm {
-		pinctrl-0 = <&pwm4_pins_a>;// &pwm4_pins_b>;
-		pinctrl-1 = <&pwm4_sleep_pins_a>;// &pwm4_sleep_pins_b>;
+		pinctrl-0 = <&pwm4_pins_a &pwm4_pins_b>;
+		pinctrl-1 = <&pwm4_sleep_pins_a &pwm4_sleep_pins_b>;
 		pinctrl-names = "default", "sleep";
 		status = "okay";
 	};

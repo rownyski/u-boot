@@ -10,7 +10,7 @@
 #include <dt-bindings/rtc/rtc-stm32.h>
 
 / {
-	model = "v2018.11-stm32mp-r2.1.ptu4 PTU u-boot";
+	model = "Linux pTU";
 	compatible = "st,stm32mp157c-dk2", "st,stm32mp157";
 
 	aliases {
