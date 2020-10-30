@@ -423,17 +423,20 @@
 
 			 bst_out: boost {
 				regulator-name = "bst_out";
+                                regulator-always-on;
 				interrupts = <IT_OCP_BOOST 0>;
 			 };
 
 			vbus_otg: pwr_sw1 {
 				regulator-name = "vbus_otg";
+                                regulator-always-on;
 				interrupts = <IT_OCP_OTG 0>;
 				regulator-active-discharge;
 			 };
 
 			 vbus_sw: pwr_sw2 {
 				regulator-name = "vbus_sw";
+                                regulator-always-on;
 				interrupts = <IT_OCP_SWOUT 0>;
 				regulator-active-discharge;
 			 };
