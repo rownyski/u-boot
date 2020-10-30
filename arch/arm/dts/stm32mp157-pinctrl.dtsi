@@ -1448,7 +1448,7 @@
 					pinmux = <STM32_PINMUX('B', 8, AF8)>; /* UART4_RX */
                                         //pinmux = <STM32_PINMUX('B', 2, AF8)>; /* UART4_RX */
 					//bias-disable;
-                                        bias-pull-up
+                                        bias-pull-up;
 				};
 			};
 
